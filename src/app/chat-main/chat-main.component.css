@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+mat-expansion-panel{
+    width: 330px;
+    position: fixed;
+    bottom: 0%;
+    margin: 0%;
+}
+mat-action-row{
+    border: none;
+}
