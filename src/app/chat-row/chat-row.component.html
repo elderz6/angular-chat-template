@@ -1,16 +1,19 @@
 <li class='{{rowPosition}} clearfix'>
-  <div>
-    <div class="imgs">
+  <mat-grid-list cols='4'>
+    <mat-grid-tile  [colspan]='1' class="imgs" *ngIf="rowPosition === 'right'">
       <img src="http://placehold.it/50/FA6F57/fff&text=ab" alt="img">
-    </div>
-      <strong class="usrmsg">
-      Some random example message
-    </strong>
+    </mat-grid-tile>
+      <mat-grid-tile [colspan]='3' class="usrmsg">
+        teste
+      </mat-grid-tile>
+    <mat-grid-tile  [colspan]='1' class="imgs" *ngIf="rowPosition === 'left'">
+        <img src="http://placehold.it/50/FA6F57/fff&text=Bot" alt="img">
+      </mat-grid-tile>
       <div class="timer">
         <small>
           <mat-icon>timer</mat-icon>
             {{time}}
         </small>
       </div>
-  </div>
+  </mat-grid-list>
 </li>

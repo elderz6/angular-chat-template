@@ -1,16 +1,33 @@
 <div class="panel-footer" >
-  <div class="input-group">
+<mat-divider></mat-divider>
+  
+  <!-- <div class="input-group">
     <mat-form-field>
     <input matInput placeholder='Digite sua mensagem'>
   </mat-form-field>
-    <span>
-        <button mat-button color="primary">
+        <button mat-icon-button color="primary">
           <mat-icon>
             send
           </mat-icon>
-          
         </button>
+  </div> -->
 
-    </span>
-  </div>
+<mat-grid-list class="input-group" cols='3' rows='1' rowHeight='70px'>
+
+  <mat-grid-tile [colspan]='2'>
+      <mat-form-field>
+
+    <input matInput placeholder="Mensagem"/>
+</mat-form-field> 
+
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]='1'>
+      <button mat-icon-button color="primary">
+       <mat-icon>
+          send
+       </mat-icon>
+      </button>
+    </mat-grid-tile>
+  </mat-grid-list>
+
 </div>

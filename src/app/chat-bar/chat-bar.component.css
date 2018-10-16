@@ -1,5 +1,14 @@
 .panel-footer{
     position: fixed;
     bottom: 0%;
-    margin-left: 1%;
+    width: 300px;
+
+}
+.input-group{
+    width: 100%;
+
+}
+.mat-button{
+    width: 5px;
+    padding:0;
 }

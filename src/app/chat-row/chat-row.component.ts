@@ -8,8 +8,8 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ChatRowComponent implements OnInit {
 
   time = new Date().toLocaleString();
-
   @Input() rowPosition: string;
+
   constructor() {
    }
 
